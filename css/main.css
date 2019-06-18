@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box; }
+
+h1.main-title {
+  font-size: 1.7rem;
+  color: #293347;
+  margin-bottom: 2.4rem; }
+
+.hamburger-menu {
+  position: absolute;
+  top: -27px;
+  right: 15px; }
+
+/*********************
+  BREAKPOINTS
+*********************/
+.header {
+  padding: 1.2rem 0; }
+  .header__logo i {
+    font-size: 2rem;
+    color: #8C43FF; }
+  .header__navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  @media (min-width: 40em) {
+    .header__navigation li {
+      display: inline-block; } }
+  .header__navigation li a {
+    color: red; }
+  .header__navigation nav.navigation {
+    display: none;
+    transition: all 2s linear 2s; }
+    @media (min-width: 40em) {
+      .header__navigation nav.navigation {
+        display: block; } }
+  .header__navigation nav.navigation.show {
+    display: block;
+    transition: all 2s linear 2s; }
