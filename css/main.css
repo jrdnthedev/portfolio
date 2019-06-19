@@ -86,3 +86,17 @@ section {
     .main__intro {
       padding-left: 20rem;
       padding-right: 20rem; } }
+
+.main__work figure {
+  height: 150px; }
+
+.main__card {
+  height: 250px; }
+  .main__card-title {
+    padding: 5rem 0 0; }
+
+.main__card-wrapper {
+  padding: 2rem 0 0; }
+  @media (max-width: 39.9375em) {
+    .main__card-wrapper {
+      margin: 0; } }
