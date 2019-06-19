@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+a, a:hover {
+  text-decoration: none !important; }
+
 h1.main-title {
   font-size: 1.7rem;
   color: #293347;
@@ -11,29 +14,75 @@ h1.main-title {
   top: -27px;
   right: 15px; }
 
+.avatar {
+  font-size: 6rem;
+  padding: 3rem 0;
+  color: #8C43FF; }
+
+section {
+  padding: 5rem 0 0; }
+
+.hero-img {
+  width: 100%;
+  max-height: 250px; }
+
 /*********************
   BREAKPOINTS
 *********************/
-.header {
+.header__bar {
   padding: 1.2rem 0; }
-  .header__logo i {
-    font-size: 2rem;
-    color: #8C43FF; }
-  .header__navigation ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
+
+.header__logo i {
+  font-size: 2rem;
+  color: #8C43FF; }
+
+.header__navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+@media (min-width: 40em) {
+  .header__navigation li {
+    display: inline-block; } }
+
+.header__navigation li a {
+  color: #293347; }
+
+.header__navigation nav.navigation {
+  display: none;
+  transition: all 2s linear 2s; }
   @media (min-width: 40em) {
-    .header__navigation li {
-      display: inline-block; } }
-  .header__navigation li a {
-    color: red; }
-  .header__navigation nav.navigation {
-    display: none;
-    transition: all 2s linear 2s; }
-    @media (min-width: 40em) {
-      .header__navigation nav.navigation {
-        display: block; } }
-  .header__navigation nav.navigation.show {
-    display: block;
-    transition: all 2s linear 2s; }
+    .header__navigation nav.navigation {
+      display: block;
+      text-align: right; } }
+  .header__navigation nav.navigation .menu {
+    display: inline-block; }
+    .header__navigation nav.navigation .menu__item {
+      padding: 0 .25rem; }
+
+.header__navigation nav.navigation.show {
+  display: block;
+  transition: all 2s linear 2s; }
+
+.header__navigation .hamburger-menu i {
+  font-size: 1.3rem;
+  color: #8C43FF; }
+
+.main__intro {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #8C43FF;
+  color: #ffffff;
+  padding-bottom: 5rem; }
+  @media (min-width: 40em) {
+    .main__intro {
+      padding-left: 6rem;
+      padding-right: 6rem; } }
+  @media (min-width: 64em) {
+    .main__intro {
+      padding-left: 12rem;
+      padding-right: 12rem; } }
+  @media (min-width: 70em) {
+    .main__intro {
+      padding-left: 20rem;
+      padding-right: 20rem; } }

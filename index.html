@@ -14,25 +14,48 @@
   <body>
     <div class="container-fluid">
 
-      <header class="row header" >
-        <div class="col-sm header__logo">
-          <a href="#"><i class="fab fa-adversal" role="img"></i></a>
+      <header class="header" >
+        <div class="row header__bar">
+          <div class="col-sm header__logo">
+            <a href="#"><i class="fab fa-bity" role="img"></i></a>
+          </div>
+          <div class="col-sm header__navigation">
+            <div id="hamburger-menu" class="hamburger-menu d-md-none"><a href="#"><i class="fas fa-align-justify"></i></a></div>
+            <nav role="navigation" class="navigation" id="navigation">
+              <ul class="menu">
+                <li class="menu__item"><a href="#">Projects</a></li>
+                <li class="menu__item"><a href="#">About</a></li>
+                <li class="menu__item"><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="col-sm header__navigation">
-          <div id="hamburger-menu" class="hamburger-menu d-md-none"><a href="#"><i class="fas fa-align-justify"></i></a></div>
-          <nav role="navigation" class="navigation" id="navigation">
-            <ul class="menu">
-              <li class="menu__item"><a href="#">Projects</a></li>
-              <li class="menu__item"><a href="#">About</a></li>
-              <li class="menu__item"><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+
+        <section class="row header__hero">
+          <div class="col-sm">
+            <h1 class="text-center main-title">Designer, Front-end Developer & Mentor</h1>
+            <h2 class="text-center lead sub-title">I design and code beautifully simple things, and I love what I do.</h2>
+            <div class="text-center">
+              <i class="fab fa-bity avatar"></i>
+            </div>
+            <div class="row">
+              <img src="img/hero.jpg" alt="skyline image" role="img" class="hero-img">
+            </div>
+          </div>
+        </section>
       </header>
 
       <main role="main" class="main">
-        <h1 class="text-center main-title">Designer, Front-end Developer & Mentor</h1>
-        <h2 class="text-center lead sub-title">I design and code beautifully simple things, and I love what I do.</h2>
+        <section class="main__intro row">
+          <h3>Hi, I’m Andre. Nice to meet you.</h3>
+          <p>
+            The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+          </p>
+        </section>
+
+        <section class="main__work">
+          <h2 class="text-center">My recent work</h2>
+        </section>
       </main>
 
       <footer class="footer">
