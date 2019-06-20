@@ -23,10 +23,10 @@ function watchHtml(cb) {
   cb();
 }
 
-function reload(cb){
-  return browserSync.stream();
-  cb();
-}
+// function reload(cb){
+//   return browserSync.stream();
+//   cb();
+// }
 
 
 exports.default = function(){

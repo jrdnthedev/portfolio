@@ -29,6 +29,9 @@ section {
 /*********************
   BREAKPOINTS
 *********************/
+/*********************
+  HEADER
+*********************/
 .header__bar {
   padding: 1.2rem 0; }
 
@@ -84,19 +87,54 @@ section {
       padding-right: 12rem; } }
   @media (min-width: 70em) {
     .main__intro {
-      padding-left: 20rem;
-      padding-right: 20rem; } }
+      padding-left: 25rem;
+      padding-right: 25rem; } }
+
+.main__work h2 {
+  margin-bottom: 2rem; }
 
 .main__work figure {
-  height: 150px; }
-
-.main__card {
-  height: 250px; }
-  .main__card-title {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 0; }
+  .main__work figure .main__card-background {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    transform: scaleX(1);
+    background-size: cover; }
+  @media (min-width: 64em) {
+    .main__work figure {
+      height: 250px; } }
+  .main__work figure-title {
     padding: 5rem 0 0; }
 
-.main__card-wrapper {
-  padding: 2rem 0 0; }
-  @media (max-width: 39.9375em) {
-    .main__card-wrapper {
-      margin: 0; } }
+/*********************
+  FOOTER
+*********************/
+.footer {
+  min-height: 250px;
+  margin-top: 5rem;
+  background-color: #8C43FF; }
+  .footer i {
+    color: #ffffff;
+    font-size: 4rem; }
+  .footer p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 3rem; }
+  .footer .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .footer .menu__item {
+      display: inline-block;
+      margin: 0 .5rem; }
+      .footer .menu__item a {
+        color: #ffffff; }
+  .footer .copyright {
+    margin: 1rem;
+    color: #ffffff; }
+  @media (min-width: 40em) {
+    .footer {
+      min-height: 450px; } }

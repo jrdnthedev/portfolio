@@ -22,10 +22,10 @@
           <div class="col-sm header__navigation">
             <div id="hamburger-menu" class="hamburger-menu d-md-none"><a href="#"><i class="fas fa-align-justify"></i></a></div>
             <nav role="navigation" class="navigation" id="navigation">
-              <ul class="menu">
-                <li class="menu__item"><a href="#">Projects</a></li>
-                <li class="menu__item"><a href="#">About</a></li>
-                <li class="menu__item"><a href="#">Contact</a></li>
+              <ul class="menu" role="list">
+                <li class="menu__item" role="listitem"><a href="#" role="link">Projects</a></li>
+                <li class="menu__item" role="listitem"><a href="#" role="link">About</a></li>
+                <li class="menu__item" role="listitem"><a href="#" role="link">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -38,7 +38,7 @@
             <div class="text-center">
               <i class="fab fa-bity avatar"></i>
             </div>
-            <div class="row">
+            <div class="row" role="row">
               <img src="img/hero.jpg" alt="skyline image" role="img" class="hero-img">
             </div>
           </div>
@@ -46,7 +46,7 @@
       </header>
 
       <main role="main" class="main">
-        <section class="main__intro row">
+        <section class="main__intro row text-center">
           <h3>Hi, I’m Andre. Nice to meet you.</h3>
           <p>
             The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
@@ -55,25 +55,54 @@
 
         <section class="main__work">
           <h2 class="text-center">My recent work</h2>
-          <div class="row offset-sm-0 offset-md-1 col-md-10 main__card-wrapper">
-            <figure class="col-sm main__card">
-              <figcaption>
-                <h4 class="main__card-title">test name feeder app</h4>
-                <p>item 1</p>
-              </figcaption>
-            </figure>
-            <figure class="col-sm main__card">
-              <figcaption>
-                <h4 class="main__card-title">test short</h4>
-                <p>item 2</p>
-              </figcaption>
-            </figure>
+          <div class="row">
+            <div class="offset-sm-0 offset-md-1 col-md-10 main__card-wrapper">
+              <div class="row">
+                <figure class="col-sm-6 main__card" >
+                  <div class="main__card-background" style="background-image:url('img/work/curology.jpg')">
+                    <figcaption>
+                      <h4 class="main__card-title">test name feeder app</h4>
+                      <p>item 1</p>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure class="col-sm-6 main__card" >
+                  <div class="main__card-background" style="background-image:url('img/work/harley.jpg')">
+                    <figcaption>
+                      <h4 class="main__card-title">test name feeder app</h4>
+                      <p>item 1</p>
+                    </figcaption>
+                  </div>
+                </figure>
+                <figure class="col-sm-6 main__card" >
+                  <div class="main__card-background" style="background-image:url('img/work/dominik-schneider.jpg')">
+                    <figcaption>
+                      <h4 class="main__card-title">test name feeder app</h4>
+                      <p>item 1</p>
+                    </figcaption>
+                  </div>
+                </figure>
+              </div>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
-
+      <footer class="footer row">
+        <div class="offset-sm-4 col-sm-4 text-center">
+            <i class="fab fa-bity avatar"></i>
+            <p>Living, learning, & leveling up one day at a time.</p>
+            <div>
+              <ul class="menu" role="list">
+                <li class="menu__item" role="listitem"><a href="#" role="link">Projects</a></li>
+                <li class="menu__item" role="listitem"><a href="#" role="link">About</a></li>
+                <li class="menu__item" role="listitem"><a href="#" role="link">Contact</a></li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <small>Handcrafted by me &copy; andre mcmorris</small>
+            </div>
+        </div>
       </footer>
     </div>
     <!-- Optional JavaScript -->
