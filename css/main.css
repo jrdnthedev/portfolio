@@ -96,18 +96,36 @@ section {
 .main__work figure {
   height: 150px;
   width: 100%;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden; }
   .main__work figure .main__card-background {
     height: 100%;
     width: 100%;
-    background-position: center center;
-    transform: scaleX(1);
-    background-size: cover; }
+    background-position: center;
+    background-size: cover;
+    transition: all .5s; }
+    .main__work figure .main__card-background--top {
+      background-position: top; }
+    .main__work figure .main__card-background--bottom {
+      background-position: bottom; }
+  .main__work figure:hover .main__card-background {
+    transform: scale(1.2);
+    transition: all .5s; }
+  .main__work figure:focus .main__card-background {
+    transform: scale(1.2);
+    transition: all .5s; }
   @media (min-width: 64em) {
     .main__work figure {
       height: 250px; } }
   .main__work figure-title {
     padding: 5rem 0 0; }
+  .main__work figure figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 5px 15px; }
 
 /*********************
   FOOTER
