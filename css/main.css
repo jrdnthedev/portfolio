@@ -1,5 +1,6 @@
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  color: #293347; }
 
 * {
   box-sizing: border-box; }
@@ -9,7 +10,6 @@ a, a:hover {
 
 h1.main-title {
   font-size: 1.7rem;
-  color: #293347;
   margin-bottom: 2.4rem; }
 
 .hamburger-menu {
@@ -28,6 +28,22 @@ section {
 .hero-img {
   width: 100%;
   max-height: 250px; }
+
+.ribbon {
+  text-align: center;
+  position: relative;
+  line-height: 100px;
+  background: #fff; }
+
+.ribbon:after {
+  background-image: linear-gradient(to right, #F20715 20%, #F2CB05 20%, #F2CB05 40%, #131825 40%, #131825 60%, #F0E9CE 60%, #F0E9CE 80%, #D90105 80%);
+  position: absolute;
+  content: '';
+  height: 6px;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0; }
 
 /*********************
   BREAKPOINTS
@@ -53,6 +69,29 @@ section {
 
 .header__navigation li a {
   color: #293347; }
+  @media (min-width: 64em) {
+    .header__navigation li a {
+      position: relative;
+      display: inline-block;
+      margin: 15px 6px;
+      outline: none;
+      color: #293347;
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+      overflow: hidden; }
+      .header__navigation li a span {
+        position: relative;
+        display: inline-block;
+        transition: transform 0.3s; }
+        .header__navigation li a span::before {
+          position: absolute;
+          top: 100%;
+          content: attr(data-hover);
+          color: #8C43FF;
+          transform: translate3d(0, 0, 0); }
+        .header__navigation li a span:hover, .header__navigation li a span:focus {
+          transform: translateY(-100%); }
+      .header__navigation li a:hover {
+        outline: none; } }
 
 .header__navigation nav.navigation {
   display: none;
@@ -73,6 +112,18 @@ section {
 .header__navigation .hamburger-menu i {
   font-size: 1.3rem;
   color: #8C43FF; }
+
+.cl-effect-5 a span::before {
+  position: absolute;
+  top: 100%;
+  content: attr(data-hover);
+  font-weight: 700;
+  transform: translate3d(0, 0, 0); }
+
+.main h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-weight: 700; }
 
 .main__intro {
   padding-left: 1.5rem;
@@ -130,11 +181,36 @@ section {
     left: 0;
     padding: 5px 15px; }
 
+.main__skills .sass {
+  color: #b37399; }
+
+.main__skills .bootstrap {
+  color: #563d7c; }
+
+.main__skills .html5 {
+  color: #e87e4e; }
+
+.main__skills .angular {
+  color: #d04458; }
+
+.main__skills .bitbucket {
+  color: #4285f4; }
+
 .main__skills h2 {
   margin-bottom: 1rem; }
 
 .main__skills span {
-  font-size: 2rem; }
+  font-size: 1.4rem;
+  text-transform: capitalize; }
+
+.main__skills .icon-wrapper {
+  margin: 15px auto; }
+  @media (min-width: 40em) {
+    .main__skills .icon-wrapper {
+      width: 130px; } }
+  .main__skills .icon-wrapper i {
+    margin-right: 5px;
+    font-size: 1.3rem; }
 
 /*********************
   FOOTER
