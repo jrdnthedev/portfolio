@@ -1,6 +1,7 @@
 body {
   font-size: 16px;
-  color: #293347; }
+  color: #293347;
+  font-weight: 100; }
 
 * {
   box-sizing: border-box; }
@@ -122,8 +123,7 @@ section {
 
 .main h2 {
   font-size: 1.5rem;
-  font-weight: 100;
-  font-weight: 700; }
+  font-weight: 100; }
 
 .main__intro {
   padding-left: 1.5rem;
@@ -181,20 +181,9 @@ section {
     left: 0;
     padding: 5px 15px; }
 
-.main__skills .sass {
-  color: #b37399; }
-
-.main__skills .bootstrap {
-  color: #563d7c; }
-
-.main__skills .html5 {
-  color: #e87e4e; }
-
-.main__skills .angular {
-  color: #d04458; }
-
-.main__skills .bitbucket {
-  color: #4285f4; }
+@media (min-width: 64em) {
+  .main__skills-wrapper {
+    padding-left: 0 !important; } }
 
 .main__skills h2 {
   margin-bottom: 1rem; }
