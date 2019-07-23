@@ -4,7 +4,8 @@ body {
   font-weight: 100; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  transition: all .5s; }
 
 a, a:hover {
   text-decoration: none !important; }
@@ -165,7 +166,8 @@ section {
       background-position: bottom; }
   .main__work figure:hover .main__card-background {
     transform: scale(1.2);
-    transition: all .5s; }
+    transition: all .5s;
+    background-color: rgba(0, 0, 0, 0.6); }
   .main__work figure:focus .main__card-background {
     transform: scale(1.2);
     transition: all .5s; }
@@ -184,6 +186,12 @@ section {
 @media (min-width: 64em) {
   .main__skills-wrapper {
     padding-left: 0 !important; } }
+
+.main__skills-wrapper a {
+  color: #8C43FF; }
+  .main__skills-wrapper a:hover {
+    cursor: pointer;
+    color: #293347; }
 
 .main__skills h2 {
   margin-bottom: 1rem; }
@@ -224,6 +232,8 @@ section {
       margin: 0 .5rem; }
       .footer .menu__item a {
         color: #ffffff; }
+        .footer .menu__item a:hover {
+          color: #293347; }
   .footer .copyright {
     margin: 1rem;
     color: #ffffff; }
