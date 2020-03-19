@@ -1,7 +1,8 @@
 body {
   font-size: 16px;
   color: #293347;
-  font-weight: 100; }
+  font-weight: 100;
+  background-color: #ffffff; }
 
 * {
   box-sizing: border-box;
@@ -11,8 +12,27 @@ a, a:hover {
   text-decoration: none !important; }
 
 h1.main-title {
-  font-size: 1.7rem;
-  margin-bottom: 2.4rem; }
+  font-size: 10.7rem;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.heading {
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: left !important;
+  margin-left: 0 !important; }
+
+.circle {
+  border-radius: 50%;
+  background: black;
+  height: 4px;
+  width: 4px;
+  display: inline-block;
+  vertical-align: middle; }
 
 .hamburger-menu {
   position: absolute;
@@ -23,9 +43,6 @@ h1.main-title {
   font-size: 6rem;
   padding: 3rem 0;
   color: #162835; }
-
-section {
-  padding: 5rem 0 0; }
 
 .hero-img {
   width: 100%;
@@ -58,73 +75,80 @@ section {
 /*********************
   HEADER
 *********************/
-.header__bar {
-  padding: 1.2rem 0; }
-
-.header__logo i {
-  font-size: 2rem;
-  color: #162835; }
-
-.header__navigation ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-@media (min-width: 40em) {
-  .header__navigation li {
-    display: inline-block; } }
-
-.header__navigation li a {
-  color: #293347; }
-  @media (min-width: 64em) {
-    .header__navigation li a {
-      position: relative;
-      display: inline-block;
-      margin: 15px 6px;
-      outline: none;
-      color: #293347;
-      text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-      overflow: hidden; }
-      .header__navigation li a span {
+.header {
+  margin: 0 15px 15px; }
+  .header__logo i {
+    font-size: 2rem;
+    color: #162835; }
+  .header__navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  @media (min-width: 40em) {
+    .header__navigation li {
+      display: inline-block; } }
+  .header__navigation li a {
+    color: #293347;
+    text-align: center;
+    width: 80px;
+    letter-spacing: 2px; }
+    @media (min-width: 64em) {
+      .header__navigation li a {
         position: relative;
         display: inline-block;
-        transition: transform 0.3s; }
-        .header__navigation li a span::before {
-          position: absolute;
-          top: 100%;
-          content: attr(data-hover);
-          color: #162835;
-          transform: translate3d(0, 0, 0); }
-        .header__navigation li a span:hover, .header__navigation li a span:focus {
-          transform: translateY(-100%); }
-      .header__navigation li a:hover {
-        outline: none; } }
-
-.header__navigation nav.navigation {
-  display: none;
-  transition: all 2s linear 2s; }
-  @media (min-width: 40em) {
-    .header__navigation nav.navigation {
-      display: block;
-      text-align: right; } }
-  .header__navigation nav.navigation .menu {
-    display: inline-block; }
-    .header__navigation nav.navigation .menu__item {
-      padding: 0 .25rem; }
-
-.header__navigation nav.navigation.show {
-  display: block;
-  transition: all 2s linear 2s; }
-
-.header__navigation .hamburger-menu i {
-  font-size: 1.3rem;
-  color: #162835; }
+        margin: 3px 6px;
+        outline: none;
+        color: #293347;
+        text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+        overflow: hidden; }
+        .header__navigation li a span {
+          position: relative;
+          display: inline-block;
+          transition: transform 0.3s; }
+          .header__navigation li a span::before {
+            position: absolute;
+            top: 100%;
+            font-weight: bold;
+            content: attr(data-hover);
+            color: #162835;
+            transform: translate3d(0, 0, 0); }
+          .header__navigation li a span:hover, .header__navigation li a span:focus {
+            transform: translateY(-100%); }
+        .header__navigation li a:hover {
+          outline: none; } }
+  .header__navigation nav.navigation {
+    display: none;
+    transition: all 2s linear 2s; }
+    @media (min-width: 40em) {
+      .header__navigation nav.navigation {
+        display: block;
+        text-align: right; } }
+    .header__navigation nav.navigation .menu {
+      display: inline-block; }
+      .header__navigation nav.navigation .menu__item {
+        padding: 0 .25rem; }
+  .header__navigation nav.navigation.show {
+    display: block;
+    transition: all 2s linear 2s; }
+  .header__navigation .hamburger-menu i {
+    font-size: 1.3rem;
+    color: #162835; }
+  .header__hero {
+    background-color: #F8F8F8; }
+    .header__hero .slide-left {
+      height: 100%;
+      width: 50%;
+      background-color: #2ecc71; }
+      .header__hero .slide-left div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%; }
 
 .cl-effect-5 a span::before {
   position: absolute;
   top: 100%;
   content: attr(data-hover);
-  font-weight: 700;
   transform: translate3d(0, 0, 0); }
 
 .main h2 {
