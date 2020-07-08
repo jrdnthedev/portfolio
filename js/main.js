@@ -10,7 +10,7 @@
       navigation.classList.add('show');
     }
   });
-
+  
   var getIntroHeight = function () {
     const height = window.innerHeight - 70;
     setIntroheight(height);
