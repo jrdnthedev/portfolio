@@ -18,7 +18,7 @@
 
 body {
   font-size: 16px;
-  color: #293347;
+  color: #363333;
   font-weight: 100;
   background-color: #ffffff; }
 
@@ -85,7 +85,9 @@ a, a:hover {
   HEADER
 *********************/
 .header {
-  margin: 0 15px 15px; }
+  margin: 0 15px 15px;
+  z-index: 2;
+  position: relative; }
   .header .main-title {
     font-family: 'OldSansBlack';
     font-size: 2.7rem;
@@ -111,13 +113,26 @@ a, a:hover {
     .header .jobtitle h2 {
       font-family: 'CaviarDreamsBold'; }
   .header .animation {
-    width: 400px;
+    width: 200px;
     height: 200px;
     margin: 0 auto;
-    top: 25%;
-    position: relative;
-    background: white;
-    padding: 42px 87px; }
+    top: 40%;
+    position: relative; }
+    .header .animation .item {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 30px;
+      height: 30px;
+      margin-left: -15px;
+      margin-top: -15px;
+      background-color: #363333; }
+    .header .animation svg {
+      position: relative;
+      width: 100%; }
+    .header .animation path {
+      stroke-width: 2;
+      color: #e16428; }
     .header .animation .el {
       height: 12px;
       width: 12px;
@@ -141,7 +156,7 @@ a, a:hover {
     .header__navigation li {
       display: inline-block; } }
   .header__navigation li a {
-    color: #293347;
+    color: #363333;
     text-align: center;
     width: 80px;
     letter-spacing: 2px; }
@@ -151,7 +166,7 @@ a, a:hover {
         display: inline-block;
         margin: 3px 6px;
         outline: none;
-        color: #293347;
+        color: #363333;
         text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
         overflow: hidden; }
         .header__navigation li a span {
@@ -187,7 +202,10 @@ a, a:hover {
     font-size: 1.3rem;
     color: #162835; }
   .header__hero {
-    background-color: #F8F8F8; }
+    background-color: #F8F8F8;
+    overflow: hidden;
+    z-index: 1;
+    position: relative; }
     .header__hero .slide-left {
       height: 100%;
       width: 50%;
@@ -276,7 +294,7 @@ a, a:hover {
   color: #162835; }
   .main__skills-wrapper a:hover {
     cursor: pointer;
-    color: #293347; }
+    color: #363333; }
 
 .main__skills h2 {
   margin-bottom: 1rem; }
@@ -318,7 +336,7 @@ a, a:hover {
       .footer .menu__item a {
         color: #ffffff; }
         .footer .menu__item a:hover {
-          color: #293347; }
+          color: #363333; }
   .footer .copyright {
     margin: 1rem;
     color: #ffffff; }

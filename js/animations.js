@@ -2,11 +2,12 @@
 
 (function(){
     anime({
-        targets: '.animation .el',
-        translateX: anime.stagger(10, {grid: [14, 5], from: 'center', axis: 'x'}),
-        translateY: anime.stagger(10, {grid: [14, 5], from: 'center', axis: 'y'}),
-        rotateZ: anime.stagger([0, 90], {grid: [14, 5], from: 'center', axis: 'x'}),
-        delay: anime.stagger(200, {grid: [14, 5], from: 'center'}),
-        easing: 'easeInOutQuad'
+        targets: '.line-drawing-demo .lines path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1700,
+        delay: function(el, i) { return i * 250 },
+        direction: 'normal',
+        loop: false
     });
 }());
