@@ -16,6 +16,9 @@
   font-weight: normal;
   font-style: normal;
 }
+/*********************
+  BREAKPOINTS
+*********************/
 body {
   font-size: 16px;
   color: #363333;
@@ -37,9 +40,27 @@ h1, h2, h3, h4, p {
   flex: 0.5;
 }
 
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.btm-mrg {
+  margin-bottom: 3rem;
+}
+
 h3 {
-  font-size: 2.2rem;
-  font-family: museo-sans, sans-serif;
+  font-family: "museo-sans-display";
+  font-size: 4rem;
+  line-height: 73px;
+}
+
+h4 {
+  font-size: 1.8rem;
+  font-family: museo-sans-display, sans-serif;
   font-weight: 900;
   font-style: normal;
 }
@@ -47,19 +68,6 @@ h3 {
 * {
   box-sizing: border-box;
   transition: all 0.5s;
-}
-
-.heading {
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-align: left !important;
-  margin-left: 0 !important;
-}
-
-.avatar {
-  font-size: 6rem;
-  padding: 3rem 0;
-  color: #ffffff;
 }
 
 .ribbon {
@@ -84,9 +92,6 @@ h3 {
   top: 0;
 }
 
-/*********************
-  BREAKPOINTS
-*********************/
 /*********************
   HEADER
 *********************/
@@ -118,52 +123,19 @@ h3 {
     margin: 0;
   }
 }
-.main__work h2 {
-  margin-bottom: 2rem;
+.main__work .flex {
+  flex-direction: column;
 }
-.main__work figure {
-  height: 150px;
-  width: 100%;
-  margin-bottom: 0;
-  padding: 0;
-  overflow: hidden;
+.main__work .flex.flex-background {
+  order: 2;
 }
-.main__work figure .main__card-background {
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  transition: all 0.5s;
-}
-.main__work figure .main__card-background--top {
-  background-position: top;
-}
-.main__work figure .main__card-background--bottom {
-  background-position: bottom;
-}
-.main__work figure:hover .main__card-background {
-  transform: scale(1.2);
-  transition: all 0.5s;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.main__work figure:focus .main__card-background {
-  transform: scale(1.2);
-  transition: all 0.5s;
-}
-@media (min-width: 64em) {
-  .main__work figure {
-    height: 250px;
+@media (min-width: 40em) {
+  .main__work .flex {
+    flex-direction: row;
   }
-}
-.main__work figure-title {
-  padding: 5rem 0 0;
-}
-.main__work figure figcaption {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  padding: 5px 15px;
+  .main__work .flex.flex-background {
+    order: 1;
+  }
 }
 @media (min-width: 64em) {
   .main__skills-wrapper {
@@ -199,10 +171,6 @@ h3 {
 .main section {
   padding: 1.5rem;
 }
-.main .container {
-  margin: 0 auto;
-  width: 95%;
-}
 .main .abt-text {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -215,7 +183,7 @@ h3 {
     padding: 0 1.75rem;
   }
   .main section {
-    padding: 3.5rem;
+    padding: 3.5rem 1.5rem;
   }
 }
 
@@ -227,18 +195,23 @@ h3 {
   background-color: #ffffff;
   padding: 1.5rem;
 }
-.footer i {
-  color: #363333;
-  font-size: 3rem;
-}
 .footer p {
-  color: #363333;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  color: #606060;
+}
+.footer .contact-me {
+  margin-top: 1rem;
+}
+.footer .contact-me a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #606060;
 }
 .footer .copyright {
   color: #606060;
-  text-align: right;
+  text-align: left;
   align-self: flex-end;
+  margin-top: 1rem;
 }
 @media (min-width: 40em) {
   .footer {
@@ -246,5 +219,11 @@ h3 {
   }
   .footer div {
     flex: 1;
+  }
+  .footer .copyright {
+    text-align: right;
+  }
+  .footer .contact-me, .footer .copyright {
+    margin-top: 0rem;
   }
 }
