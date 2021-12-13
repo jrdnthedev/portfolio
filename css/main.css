@@ -20,6 +20,7 @@ body {
   font-size: 16px;
   color: #363333;
   font-weight: 100;
+  font-family: "lato";
   background-color: #ffffff;
   margin: 0;
 }
@@ -210,7 +211,10 @@ h3 {
 @media (min-width: 40em) {
   .main .abt-text {
     margin-top: 0;
-    padding: 0 0.75rem;
+    padding: 0 1.75rem;
+  }
+  .main section {
+    padding: 3.5rem;
   }
 }
 
