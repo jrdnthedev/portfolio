@@ -1,5 +1,5 @@
 const { src, dest, watch, series } = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 
@@ -23,15 +23,16 @@ function watchHtml(cb) {
   cb();
 }
 
-// function reload(cb){
-//   return browserSync.stream();
-//   cb();
-// }
+function reload(cb){
+  return src('js/*.js')
+  .pipe(browserSync.stream());
+  cb();
+}
 
 
 exports.default = function(){
   //compile and watch
   watch('sass/**/*.scss',compileSass);
   watch('**/*.html',watchHtml);
-  // watch('js/**/*.js',reload);
+  watch('js/**/*.js',reload);
 };
