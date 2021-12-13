@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   color: #363333;
   font-weight: 100;
-  font-family: "lato";
+  font-family: "lato", sans-serif;
   background-color: #ffffff;
   margin: 0;
 }
@@ -39,7 +39,9 @@ h1, h2, h3, h4, p {
 
 h3 {
   font-size: 2.2rem;
-  font-family: sans-serif;
+  font-family: museo-sans, sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 * {
@@ -95,7 +97,7 @@ h3 {
   align-items: center;
 }
 .header .main-title {
-  font-family: "OldSansBlack";
+  font-family: museo-sans, sans-serif;
   font-size: 2.7rem;
   margin: 0 auto;
   color: white;
@@ -204,7 +206,6 @@ h3 {
 .main .abt-text {
   margin-top: 1rem;
   font-size: 1.2rem;
-  font-family: sans-serif;
   line-height: 27px;
   color: #606060;
 }
