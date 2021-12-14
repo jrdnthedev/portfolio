@@ -60,6 +60,23 @@ h1, h2, h3, h4, p {
   margin-top: 2rem;
 }
 
+.time {
+  color: #606060;
+  font-size: 1rem;
+  font-family: "museo-sans-display";
+}
+
+.tech-used {
+  font-family: "museo-sans-display";
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #606060;
+}
+
 h3 {
   font-family: "museo-sans-display";
   font-size: 4rem;
@@ -71,6 +88,11 @@ h4 {
   font-family: museo-sans-display, sans-serif;
   font-weight: 900;
   font-style: normal;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 * {
@@ -229,11 +251,6 @@ h4 {
 }
 .footer .contact-me {
   margin-top: 1rem;
-}
-.footer .contact-me a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #606060;
 }
 .footer .copyright {
   color: #606060;
