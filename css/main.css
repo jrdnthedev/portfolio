@@ -52,6 +52,14 @@ h1, h2, h3, h4, p {
   margin-bottom: 3rem;
 }
 
+.tp-mrg {
+  margin-top: 3rem;
+}
+
+.tp-mrg-md {
+  margin-top: 2rem;
+}
+
 h3 {
   font-family: "museo-sans-display";
   font-size: 4rem;
@@ -92,6 +100,15 @@ h4 {
   top: 0;
 }
 
+@media (min-width: 40em) {
+  .tp-mrg-small {
+    margin-top: 0;
+  }
+
+  .side-pad {
+    padding: 0 1.75rem;
+  }
+}
 /*********************
   HEADER
 *********************/
@@ -114,8 +131,13 @@ h4 {
 }
 .main__intro {
   background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 40em) {
+  .main__intro {
+    flex-direction: row;
+  }
   .main__intro > div {
     display: flex;
   }
@@ -126,15 +148,22 @@ h4 {
 .main__work .flex {
   flex-direction: column;
 }
-.main__work .flex.flex-background {
-  order: 2;
+.main__work .flex .flex-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  flex: 0 0 auto;
+  margin: 0 0 1.5rem 0;
 }
 @media (min-width: 40em) {
   .main__work .flex {
     flex-direction: row;
   }
-  .main__work .flex.flex-background {
-    order: 1;
+  .main__work .flex .flex-background {
+    flex: 1;
+    margin: 0;
   }
 }
 @media (min-width: 64em) {
@@ -191,7 +220,6 @@ h4 {
   FOOTER
 *********************/
 .footer {
-  margin-top: 1rem;
   background-color: #ffffff;
   padding: 1.5rem;
 }
