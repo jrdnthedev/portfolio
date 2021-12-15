@@ -147,10 +147,6 @@ p {
   color: white;
   text-transform: uppercase;
 }
-.main h2 {
-  font-size: 1.5rem;
-  font-weight: 100;
-}
 .main__intro {
   background-color: #f8f8f8;
   display: flex;
@@ -159,9 +155,6 @@ p {
 @media (min-width: 40em) {
   .main__intro {
     flex-direction: row;
-  }
-  .main__intro > div {
-    display: flex;
   }
   .main__intro > div div {
     margin: 0;
